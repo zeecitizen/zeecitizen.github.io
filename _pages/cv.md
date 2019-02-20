@@ -11,31 +11,30 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Computer Science, National University of Computer and Emerging Sciences, 2008-2012
+* M.Sc. in Computer Science, Technical University of Munich, 2015-2017
+* Semester Abroad at Massachusetts Institute of Technology, 2017
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Senior Software Developer, Navigation Database Compiler, Full-time
+  * Samsung, HARMAN Connected Car
+  * Duties included: Implementing features in Java for navigation database (NDB) compiler.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Software Engineer, Full-time
+  * GoSmoove GmbH
+  * Duties included: Implemented Java web backend. Coded payment processing, partner api integration.
+
+* Software Developer, Full-time
+  * Habib Bank AG Zürich
+  * Duties included: Implemented UAE Direct Debit System (UAEDDS) for bank.
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
+* Java (7/8)
+* SQL
+* Machine Learning
+ 
 Publications
 ======
   <ul>{% for post in site.publications %}
