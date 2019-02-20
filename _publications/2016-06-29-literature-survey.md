@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2016-06-29-literature-survey
 excerpt: 'For Augmented Reality, need for input devices for interaction in a 3D user interface between human and machine.'
 date: 2016-06-29
-venue: 'Technical University of Munich Computer Science Department. Seminar on Medical Augmented Reality and Medical Perception'
+venue: 'Seminar on Medical Augmented Reality and Medical Perception. Technical University of Munich Computer Science Department.'
 paperurl: 'http://zeecitizen.github.io/files/mohammad_zeeshan_TUM_3d_ui_techniques.pdf'
 citation: 'Zeeshan, Mohammad. (2016). &quot;Comparison of 3D UI Input Techniques to Established Methods.&quot; <i>TUM Informatik Master Seminar</i>. 1(1).'
 ---
