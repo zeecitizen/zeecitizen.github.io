@@ -10,7 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-Hi! I’m Zeeshan, a Java software engineer and a machine learning student. I completed my Master's of Science in Computer Science - MSc. at Technical University of Munich. I’m a computer scientist by training having professional experience in software engineering, but I have taken just enough courses in machine learning and data science to make trouble. I joined MIT as a visiting student researcher at Center for Collective intelligence where i contributed to the software development of the lab's Climate CoLab platform,
+Hi! I’m Zeeshan, a Java software engineer and a machine learning student. I completed my Master's of Science in Computer Science - MSc. at Technical University of Munich. I’m a computer scientist by training having professional experience in software engineering, but I have taken just enough courses in machine learning and data science to understand AI. I joined MIT as a visiting student researcher at Center for Collective intelligence where i contributed to the software development of the lab's Climate CoLab platform,
 which is an online collaboration platform where thousands of experts and non-experts from all
 over the world work together to develop and evaluate proposals about climate change. This led to an insight into microservices and porting legacy platform architectures to modern frameworks.
 
