@@ -1,0 +1,19 @@
+---
+title: "Machine Learning in Financial Insurance"
+collection: publications
+permalink: /publication/2017-12-31-machine-learning-financial-insurance
+excerpt: 'This project aims to compare state of the art algorithms in local and distributed environments at Allianz Global Data and Analytics (GD&A).'
+date: 2017-12-31
+venue: 'Allianz Headquarters in Munich. Global Data and Analytics Team'
+paperurl: 'http://zeecitizen.github.io/files/Maschinelles_Lernen_in_der_Finanzversicherung_mohammad_zeeshan.pdf'
+citation: 'Zeeshan, Mohammad. (2017). &quot;Machine Learning in Financial Insurance.&quot; <i>TUM Informatik Master IDP</i>. 1(1).'
+---
+
+Today, machine learning algorithms are widely used in data analysis, classification and prediction problems. The Allianz Global Data and Analytics (GD&A) department drives the development of data science and big data related topics inside the company.
+
+To help the GD&A team to keep up with evolving technology in big data and analytics, the project aims to compare state of the art algorithms in local and distributed environments. 
+
+[Download paper here](http://zeecitizen.github.io/files/Maschinelles_Lernen_in_der_Finanzversicherung_mohammad_zeeshan.pdf)
+
+Recommended citation: Zeeshan, Mohammad. (2016) "Machine Learning in Financial Insurance." <i>TUM Informatik Master IDP</i>. 1(1).
+
