@@ -1,0 +1,15 @@
+---
+title: "Automatic detection of dynamic data structures for C/C++ binaries"
+collection: publications
+permalink: /publication/2016-01-22-review-article-code-generation
+excerpt: 'Reversing data structures from C/C++ binaries depends on low-level programming constructs such as structs or variables.'
+date: 2016-01-22
+venue: 'TUM MSc Informatik course project. Review article during Seminar Code Generation.'
+paperurl: 'http://zeecitizen.github.io/files/code_gen_zeeshan_practice_paper_draft.pdf'
+citation: 'Zeeshan, Mohammad. (2016). &quot;Student's review paper for MSc seminar.&quot; <i>TUM MSc Informatik course project. Review article during Seminar Code Generation.</i>. 1(3).'
+---
+Reversing data structures from C/C++ binaries depends on low-level programming constructs such as structs or variables. Forensics analysis and reverse engineering are very hard if the detailed information about the pointer structures is not known. In this paper we have reviewed existing research on a tool called ”Mem-Pick” which caters this need.
+
+[Download paper here](http://zeecitizen.github.io/files/code_gen_zeeshan_practice_paper_draft.pdf)
+
+Disclaimer: This is an article from a university course project written for practice purpose only. Not for publishing. 
