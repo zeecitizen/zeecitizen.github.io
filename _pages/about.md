@@ -12,14 +12,17 @@ redirect_from:
 
 I'm a **Senior Software Engineer** with 8+ years building backend, data and AI systems in **Python and Java** &mdash; from cloud infrastructure to web front ends &mdash; for banking, automotive and cybersecurity. I've worked with **Deloitte, Huawei, BMW and Samsung**, and I hold an M.Sc. in Computer Science (Artificial Intelligence) from **TU Munich**, with my final semester as a visiting student at **MIT**.
 
+{: .notice--info}
+**Open to Senior / Staff roles** in backend, data-platform or ML engineering &mdash; **Munich or remote (EU)**. EU work authorization &middot; German permanent residence (Niederlassungserlaubnis). Reach me at **m.zeeshan@tum.de**.
+
 **Selected impact:**
 
 - Led the CI/CD team on a **150-million-line** COBOL-to-Java mainframe migration &mdash; release time **2 weeks &rarr; 1 day**.
 - Built an AI tool translating a bank's HiveQL to BigQuery &mdash; **&minus;56%** manual effort across 207 scripts.
-- Raised a threat-intelligence classifier's precision from **78% to 83%** over 100,000+ security articles.
+- Raised a threat-intelligence classifier's precision from **78% to 83%** (human-in-the-loop) over 100,000+ security articles.
 - Shipped the test automation for the Intel modem used in the **Apple iPhone 7**.
 
-These days I build software with **agentic AI coding** day to day. My largest personal project, **Turtle**, is a live algorithmic-trading research platform developed almost entirely through agentic coding, with a machine-learning entry filter and a MetaTrader&nbsp;5 validation harness &mdash; see the [Financial Trading Software](/portfolio/1-trading-software/) page, or [how I work](/approach/).
+These days I build software with **agentic AI coding** day to day. My largest personal project, **Turtle**, is a live algorithmic-trading research platform developed almost entirely through agentic coding, built around a **MetaTrader&nbsp;5 validation harness** (with an ML entry filter in research) &mdash; see the [Financial Trading Software](/portfolio/1-trading-software/) page, or [how I work](/approach/).
 
 **Explore:** [Portfolio](/portfolio/) &middot; [How I Work](/approach/) &middot; [Publications](/publications/) &middot; [CV](/cv/)
 

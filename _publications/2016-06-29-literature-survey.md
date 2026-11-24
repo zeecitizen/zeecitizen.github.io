@@ -1,16 +1,14 @@
 ---
-title: "Literature Survey Comparison of 3D UI Input Techniques to Established Methods"
+title: "Comparison of 3D UI Input Techniques to Established Methods"
 collection: publications
 permalink: /publication/2016-06-29-literature-survey
-excerpt: 'For Augmented Reality, need for input devices for interaction in a 3D user interface between human and machine.'
+excerpt: 'A seminar paper comparing state-of-the-art 3D user-interface input devices to established ones (mouse, keyboard, joystick) for augmented reality.'
 date: 2016-06-29
-venue: 'Seminar on Medical Augmented Reality and Medical Perception. Technical University of Munich Computer Science Department.'
+venue: 'Seminar on Medical Augmented Reality and Medical Perception, TU Munich (student seminar paper)'
 paperurl: 'http://zeecitizen.github.io/files/mohammad_zeeshan_TUM_3d_ui_techniques.pdf'
-citation: 'Zeeshan, Mohammad. (2016). &quot;Comparison of 3D UI Input Techniques to Established Methods.&quot; <i>TUM Informatik Master Seminar</i>. 1(1).'
+citation: 'Zeeshan, Mohammad. (2016). "Comparison of 3D UI Input Techniques to Established Methods." Student seminar paper, Seminar on Medical Augmented Reality, TU Munich.'
 ---
 
-With the fast-paced growth and increasing popularity of Augmented Reality, there is a need for input devices which can provide the possibility of interaction in a 3D user interface between human and machine. This paper aims to understand how the state-of-the-art 3D UI input devices work, and compare them to established input devices such as mouse, keyboard, joystick and so on. We have shortlisted a few input devices ranging over various modes of input, and compared them to devices which have a similar or related functionality. We have made use of various parameters such as efficiency, ease of use, cost of productions, error rates and so on, to make our comparisons.
+With the growth of Augmented Reality there is a need for input devices that allow interaction in a 3D user interface between human and machine. This seminar paper reviews how state-of-the-art 3D UI input devices work and compares them to established input devices (mouse, keyboard, joystick and others) across efficiency, ease of use, cost and error rates.
 
 [Download paper here](http://zeecitizen.github.io/files/mohammad_zeeshan_TUM_3d_ui_techniques.pdf)
-
-Recommended citation: Zeeshan, Mohammad. (2016) "Comparison of 3D UI Input Techniques to Established Methods." <i>TUM Informatik Master Seminar</i>. 1(1).
