@@ -34,6 +34,7 @@ Not a toy backtester. Turtle is a full research-to-production loop for a trading
 ## Inside the lab
 
 <div class="lab-gallery">
+  <figure class="lab-shot"><a href="/images/turtle-mt5.png" target="_blank" rel="noopener"><img src="/images/turtle-mt5.png" alt="MetaTrader 5 showing the strategy's annotated XAU/USD chart and its trade history"></a><figcaption>MetaTrader 5 &mdash; the strategy live on XAU/USD, with its trade history &middot; click to enlarge</figcaption></figure>
   <figure class="lab-shot"><a href="/images/turtle-tv-uhv.png" target="_blank" rel="noopener"><img src="/images/turtle-tv-uhv.png" alt="Turtle TV research dashboard with live chart, strategy parameters and tester metrics"></a><figcaption>Turtle TV &mdash; research dashboard &amp; strategy tester &middot; click to enlarge</figcaption></figure>
   <figure class="lab-shot"><a href="/images/turtle-lifecycle.png" target="_blank" rel="noopener"><img src="/images/turtle-lifecycle.png" alt="Trade Lifecycle flow diagram from setups through filters to trades and exits, with MetaTrader 5 results"></a><figcaption>Trade Lifecycle &mdash; every path a trade takes, re-run in MT5</figcaption></figure>
   <figure class="lab-shot"><a href="/images/turtle-lego.png" target="_blank" rel="noopener"><img src="/images/turtle-lego.png" alt="Strategy decomposed into colour-coded swappable components with an MT5 equity curve"></a><figcaption>Strategy Lego &mdash; the strategy taken apart into swappable pieces</figcaption></figure>
