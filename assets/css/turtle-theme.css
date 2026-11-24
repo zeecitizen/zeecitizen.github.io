@@ -323,6 +323,16 @@ tbody tr:nth-child(2n) { background: rgba(255,255,255,.02); }
 .photo-grid a:hover { transform: translateY(-3px); border-color: var(--green); box-shadow: 0 0 26px -6px var(--glow-green); }
 .photo-grid img { width: 100%; height: auto; display: block; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
 
+/* ---- small expandable thumbnails (homepage) ------------------------------ */
+.thumb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(86px, 1fr)); gap: .55rem; margin: 1.1rem 0 .4rem; }
+.thumb-grid a {
+  display: block; aspect-ratio: 1 / 1; overflow: hidden;
+  border: 1px solid var(--border); border-radius: 8px; cursor: zoom-in;
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.thumb-grid a:hover { transform: translateY(-2px); border-color: var(--green); box-shadow: 0 0 16px -4px var(--glow-green); }
+.thumb-grid img { width: 100%; height: 100%; object-fit: cover; display: block; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
+
 /* ---- mobile safety: prevent any horizontal overflow ---------------------- */
 html, body { overflow-x: hidden; }
 .page__content { overflow-wrap: break-word; }

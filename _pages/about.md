@@ -24,3 +24,22 @@ These days I build software with **agentic AI coding** day to day. My largest pe
 **Explore:** [Portfolio](/portfolio/) &middot; [How I Work](/approach/) &middot; [Publications](/publications/) &middot; [CV](/cv/)
 
 [GitHub](https://github.com/zeecitizen) &middot; [LinkedIn](https://www.linkedin.com/in/mohammadzeeshan) &middot; m.zeeshan@tum.de
+
+---
+
+## A few moments at MIT
+
+<div class="thumb-grid">
+  <a href="/images/mit/mp-dsc-0131-1.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0131-1.jpg" alt="MIT / Boston photo 1" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0188.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0188.jpg" alt="MIT / Boston photo 2" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0218.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0218.jpg" alt="MIT / Boston photo 3" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0242.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0242.jpg" alt="MIT / Boston photo 4" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0680.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0680.jpg" alt="MIT / Boston photo 5" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0705.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0705.jpg" alt="MIT / Boston photo 6" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0729.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0729.jpg" alt="MIT / Boston photo 7" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0739.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0739.jpg" alt="MIT / Boston photo 8" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0772.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0772.jpg" alt="MIT / Boston photo 9" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0841.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0841.jpg" alt="MIT / Boston photo 10" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0847.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0847.jpg" alt="MIT / Boston photo 11" loading="lazy"></a>
+  <a href="/images/mit/mp-dsc-0870.jpg" target="_blank" rel="noopener"><img src="/images/mit/mp-dsc-0870.jpg" alt="MIT / Boston photo 12" loading="lazy"></a>
+</div>
