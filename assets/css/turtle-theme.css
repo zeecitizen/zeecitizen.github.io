@@ -313,6 +313,14 @@ tbody tr:nth-child(2n) { background: rgba(255,255,255,.02); }
 .dexter-lab .lab-stat b { display: block; color: var(--green); font-size: 1.08rem; }
 .dexter-lab .lab-stat span { color: var(--muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; }
 
+/* compact gallery (Open Source page): two-up on wide screens, key shots full width */
+@media (min-width: 48em) {
+  .dexter-lab .lab-gallery.lab-gallery--compact { grid-template-columns: 1fr 1fr; gap: 1.3rem; align-items: start; }
+  .dexter-lab .lab-gallery--compact figure.lab-shot--wide { grid-column: 1 / -1; }
+}
+.dexter-lab figure.lab-shot--block { margin: 1.4rem 0; }
+.dexter-lab figure.lab-shot--inline { margin: 1.2rem 0; max-width: 34rem; }
+
 /* ---- photo gallery (Student @ MIT) --------------------------------------- */
 .photo-grid { display: grid; grid-template-columns: 1fr; gap: 1.7rem; margin: 1.7rem 0; }
 .photo-grid a {

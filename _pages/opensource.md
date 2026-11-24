@@ -95,9 +95,9 @@ I work with an AI coding agent, and this contribution was built that way. The ag
 
 ### Screenshots
 
-<div class="lab-gallery">
-  <figure class="lab-shot"><a href="/images/opensource/onair-pr-210.png" target="_blank" rel="noopener"><img src="/images/opensource/onair-pr-210.png" width="1440" height="1046" alt="Pull request 210 on the nasa/OnAIR repository, open, with its description and one commit" loading="lazy"></a><figcaption>Pull request #210 on nasa/OnAIR &mdash; open, awaiting review &middot; click to enlarge</figcaption></figure>
-  <figure class="lab-shot"><a href="/images/opensource/onair-issue-189.jpg" target="_blank" rel="noopener"><img src="/images/opensource/onair-issue-189.jpg" width="1600" height="1067" alt="Issue 189 on nasa/OnAIR with the note of intent and the linked pull request" loading="lazy"></a><figcaption>Issue #189: the problem as NASA's team described it, my note of intent, and the linked pull request</figcaption></figure>
+<div class="lab-gallery lab-gallery--compact">
+  <figure class="lab-shot lab-shot--wide"><a href="/images/opensource/onair-pr-210.png" target="_blank" rel="noopener"><img src="/images/opensource/onair-pr-210.png" width="1440" height="1046" alt="Pull request 210 on the nasa/OnAIR repository, open, with its description and one commit" loading="lazy"></a><figcaption>Pull request #210 on nasa/OnAIR &mdash; open, awaiting review &middot; click to enlarge</figcaption></figure>
+  <figure class="lab-shot lab-shot--wide"><a href="/images/opensource/onair-issue-189.jpg" target="_blank" rel="noopener"><img src="/images/opensource/onair-issue-189.jpg" width="1600" height="1067" alt="Issue 189 on nasa/OnAIR with the note of intent and the linked pull request" loading="lazy"></a><figcaption>Issue #189: the problem as NASA's team described it, my note of intent, and the linked pull request</figcaption></figure>
   <figure class="lab-shot"><a href="/images/opensource/onair-checks-redis-fix.jpg" target="_blank" rel="noopener"><img src="/images/opensource/onair-checks-redis-fix.jpg" width="1600" height="977" alt="Eleven successful checks on the fork branch holding the Redis fix" loading="lazy"></a><figcaption>The fix on my fork: tests and lint on Python 3.8&ndash;3.12, plus the run against real Redis servers</figcaption></figure>
   <figure class="lab-shot"><a href="/images/opensource/onair-checks-baseline.jpg" target="_blank" rel="noopener"><img src="/images/opensource/onair-checks-baseline.jpg" width="1600" height="977" alt="The same checks on NASA's unmodified code" loading="lazy"></a><figcaption>Baseline: NASA's unmodified code under the same checks (the Redis run here is the one that shows the loss)</figcaption></figure>
   <figure class="lab-shot"><a href="/images/opensource/onair-checks-sbn-fix.jpg" target="_blank" rel="noopener"><img src="/images/opensource/onair-checks-sbn-fix.jpg" width="1600" height="977" alt="Ten successful checks on the fork branch holding the second fix" loading="lazy"></a><figcaption>The second fix (cFS/SBN adapter), not yet submitted: tests and lint on Python 3.8&ndash;3.12</figcaption></figure>
@@ -132,6 +132,8 @@ A feature that lets an administrator publish a timed notice to everyone on the s
 
 [Merged into the project's `develop` branch on 13 April 2017](https://github.com/CCI-MIT/XCoLab/commit/d006bf7b7a724f5643b205c04442c513ede2a86e): 11 files, 662 lines added.
 
+<figure class="lab-shot lab-shot--block"><a href="/images/opensource/xcolab-notifications-commit.png" target="_blank" rel="noopener"><img src="/images/opensource/xcolab-notifications-commit.png" width="1440" height="1180" alt="The commit that merged the notifications feature into XCoLab: 11 files changed, 662 additions" loading="lazy"></a><figcaption>The notifications feature landing in XCoLab: 11 files across the admin microservice, its client and the web layer &middot; click to enlarge</figcaption></figure>
+
 ### Fixes across the platform
 
 A selection of the others, each tied to a ticket in the project's tracker:
@@ -152,11 +154,6 @@ These commits went in through the team's normal workflow: feature branches named
 
 In 2020 GitHub's Archive Program stored a snapshot of public repositories in a vault in Svalbard. XCoLab was among them, and contributors to the archived repositories carry the Arctic Code Vault badge on their GitHub profile.
 
-### Screenshots
-
-<div class="lab-gallery">
-  <figure class="lab-shot"><a href="/images/opensource/xcolab-notifications-commit.png" target="_blank" rel="noopener"><img src="/images/opensource/xcolab-notifications-commit.png" width="1440" height="1180" alt="The commit that merged the notifications feature into XCoLab: 11 files changed, 662 additions" loading="lazy"></a><figcaption>The notifications feature landing in XCoLab: 11 files across the admin microservice, its client and the web layer &middot; click to enlarge</figcaption></figure>
-  <figure class="lab-shot"><a href="/images/opensource/arctic-code-vault-badge.png" target="_blank" rel="noopener"><img src="/images/opensource/arctic-code-vault-badge.png" width="940" height="490" alt="The Arctic Code Vault Contributor badge on the zeecitizen GitHub profile, listing CCI-MIT/XCoLab" loading="lazy"></a><figcaption>The Arctic Code Vault badge on my GitHub profile, for XCoLab</figcaption></figure>
-</div>
+<figure class="lab-shot lab-shot--inline"><a href="/images/opensource/arctic-code-vault-badge.png" target="_blank" rel="noopener"><img src="/images/opensource/arctic-code-vault-badge.png" width="940" height="490" alt="The Arctic Code Vault Contributor badge on the zeecitizen GitHub profile, listing CCI-MIT/XCoLab" loading="lazy"></a><figcaption>The Arctic Code Vault badge on my GitHub profile, for XCoLab</figcaption></figure>
 
 </div>
