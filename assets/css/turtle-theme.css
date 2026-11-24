@@ -225,6 +225,86 @@ tbody tr:nth-child(2n) { background: rgba(255,255,255,.02); }
 .tt-down{ color: var(--tt-red); }
 .tt-gold{ color: var(--tt-gold); }
 
+/* ============================================================================
+   Dexter's Lab theme  ·  scoped to .dexter-lab (the Turtle project page)
+   orange + cyan hazard-lab aesthetic, from the Turtle TV labs
+   ============================================================================ */
+.dexter-lab { --lab-orange:#f3a51a; --lab-orange-2:#ffc24a; --lab-cyan:#35d0e0; --lab-navy:#0d1a2c; --lab-green:#39e0a0; }
+
+.dexter-lab h2, .dexter-lab h3 {
+  color: var(--lab-orange) !important;
+  text-transform: uppercase; letter-spacing: .07em;
+  text-shadow: 0 0 16px rgba(243,165,26,.3);
+  border: 0 !important;
+}
+.dexter-lab h3 { color: var(--lab-orange-2) !important; font-size: 1.05rem; }
+
+.dexter-lab .lab-badge {
+  display: inline-block; margin: .3rem 0 1.1rem;
+  padding: .55em 1.1em; border-radius: 10px;
+  font-weight: 700; text-transform: uppercase; letter-spacing: .16em; font-size: .88rem;
+  color: var(--lab-orange-2); background: var(--lab-navy);
+  border: 3px solid transparent;
+  background-image: linear-gradient(var(--lab-navy),var(--lab-navy)),
+                    repeating-linear-gradient(45deg,#f3c41a 0 10px,#191100 10px 20px);
+  background-origin: border-box; background-clip: padding-box, border-box;
+}
+
+.dexter-lab .lab-panel {
+  position: relative; background: var(--lab-navy);
+  border: 2px solid var(--lab-cyan); border-radius: 16px;
+  padding: 1.2rem 1.4rem; margin: 1.4rem 0;
+  box-shadow: 0 0 26px -10px rgba(53,208,224,.5);
+}
+.dexter-lab .lab-panel::before {
+  content: ""; position: absolute; inset: 9px; pointer-events: none;
+  background-image:
+    radial-gradient(circle, var(--lab-cyan) 0 3px, transparent 3.5px),
+    radial-gradient(circle, var(--lab-cyan) 0 3px, transparent 3.5px),
+    radial-gradient(circle, var(--lab-cyan) 0 3px, transparent 3.5px),
+    radial-gradient(circle, var(--lab-cyan) 0 3px, transparent 3.5px);
+  background-size: 8px 8px; background-repeat: no-repeat;
+  background-position: left top, right top, left bottom, right bottom;
+}
+
+.dexter-lab .lab-gallery { display: grid; grid-template-columns: 1fr; gap: 1.3rem; margin: 1.6rem 0; }
+@media (min-width: 44em) { .dexter-lab .lab-gallery { grid-template-columns: 1fr 1fr; } }
+.dexter-lab figure.lab-shot {
+  margin: 0; background: var(--lab-navy); border: 2px solid var(--lab-cyan);
+  border-radius: 14px; overflow: hidden; min-width: 0;
+  box-shadow: 0 0 22px -10px rgba(53,208,224,.5);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.dexter-lab figure.lab-shot:hover { transform: translateY(-4px); box-shadow: 0 0 30px -6px rgba(53,208,224,.7); }
+.dexter-lab figure.lab-shot img { width: 100%; display: block; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
+.dexter-lab figure.lab-shot figcaption {
+  padding: .6em .9em; color: var(--lab-orange-2); font-size: .78rem;
+  text-transform: uppercase; letter-spacing: .06em;
+  border-top: 1px solid rgba(53,208,224,.3); background: rgba(53,208,224,.05);
+}
+
+.dexter-lab a.lab-btn {
+  display: inline-block; margin: .4rem 0; padding: .62em 1.3em;
+  background: var(--lab-orange) !important; color: #1a1200 !important;
+  border: 0; border-radius: 999px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .08em; font-size: .78rem; text-decoration: none;
+  box-shadow: 0 0 22px -6px rgba(243,165,26,.7); transition: all .16s ease;
+}
+.dexter-lab a.lab-btn:hover { background: var(--lab-orange-2) !important; box-shadow: 0 0 28px -2px rgba(243,165,26,.9); transform: translateY(-1px); text-decoration: none; }
+
+.dexter-lab .lab-stats { display: grid; grid-template-columns: repeat(2,1fr); gap: .7rem; margin: 1.3rem 0; }
+@media (min-width: 44em) { .dexter-lab .lab-stats { grid-template-columns: repeat(4,1fr); } }
+.dexter-lab .lab-stat { background: var(--lab-navy); border: 1px solid rgba(53,208,224,.4); border-radius: 10px; padding: .75em .9em; min-width: 0; }
+.dexter-lab .lab-stat b { display: block; color: var(--lab-green); font-size: 1.08rem; }
+.dexter-lab .lab-stat span { color: var(--tt-muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; }
+
+/* ---- mobile safety: prevent any horizontal overflow ---- */
+html, body { overflow-x: hidden; }
+.page__content { overflow-wrap: break-word; }
+.page__content a { overflow-wrap: anywhere; }
+.tt-portfolio-grid, .tt-portfolio-grid .list__item, .tt-portfolio-grid .archive__item { min-width: 0; max-width: 100%; }
+.tt-portfolio-grid img, .page__content img { max-width: 100%; height: auto; }
+
 @media (prefers-reduced-motion: reduce) {
   .author__avatar img { animation: none; }
   * { transition: none !important; }

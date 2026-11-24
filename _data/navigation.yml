@@ -2,6 +2,8 @@
 main:
   - title: "Portfolio"
     url: /portfolio/
+  - title: "How I Work"
+    url: /approach/
   - title: "Publications"
     url: /publications/
   - title: "CV"
