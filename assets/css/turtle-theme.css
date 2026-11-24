@@ -267,15 +267,15 @@ tbody tr:nth-child(2n) { background: rgba(255,255,255,.02); }
   background-position: left top, right top, left bottom, right bottom;
 }
 
-.dexter-lab .lab-gallery { display: grid; grid-template-columns: 1fr; gap: 1.3rem; margin: 1.6rem 0; }
-@media (min-width: 44em) { .dexter-lab .lab-gallery { grid-template-columns: 1fr 1fr; } }
+.dexter-lab .lab-gallery { display: grid; grid-template-columns: 1fr; gap: 1.8rem; margin: 1.7rem 0; }
 .dexter-lab figure.lab-shot {
   margin: 0; background: var(--lab-navy); border: 2px solid var(--lab-cyan);
   border-radius: 14px; overflow: hidden; min-width: 0;
   box-shadow: 0 0 22px -10px rgba(53,208,224,.5);
   transition: transform .18s ease, box-shadow .18s ease;
 }
-.dexter-lab figure.lab-shot:hover { transform: translateY(-4px); box-shadow: 0 0 30px -6px rgba(53,208,224,.7); }
+.dexter-lab figure.lab-shot:hover { transform: translateY(-3px); box-shadow: 0 0 34px -6px rgba(53,208,224,.75); }
+.dexter-lab figure.lab-shot a { display: block; cursor: zoom-in; }
 .dexter-lab figure.lab-shot img { width: 100%; display: block; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
 .dexter-lab figure.lab-shot figcaption {
   padding: .6em .9em; color: var(--lab-orange-2); font-size: .78rem;

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 250" font-family="'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace">
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#35d0e0"/></marker></defs>
+<rect x="18" y="34" width="163" height="96" rx="12" fill="#0d1a2c" stroke="#35d0e0" stroke-width="2"/>
+<text x="100" y="76" fill="#35d0e0" font-size="18" font-weight="700" text-anchor="middle">crawl</text>
+<text x="100" y="100" fill="#8fa6c0" font-size="13" text-anchor="middle">security articles</text>
+<line x1="187" y1="82" x2="217" y2="82" stroke="#35d0e0" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="225" y="34" width="163" height="96" rx="12" fill="#0d1a2c" stroke="#35d0e0" stroke-width="2"/>
+<text x="306" y="76" fill="#35d0e0" font-size="18" font-weight="700" text-anchor="middle">parse ·</text>
+<text x="306" y="100" fill="#8fa6c0" font-size="13" text-anchor="middle">annotate · classify</text>
+<line x1="394" y1="82" x2="424" y2="82" stroke="#35d0e0" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="432" y="34" width="163" height="96" rx="12" fill="#0d1a2c" stroke="#35d0e0" stroke-width="2"/>
+<text x="514" y="76" fill="#35d0e0" font-size="18" font-weight="700" text-anchor="middle">STIX</text>
+<text x="514" y="100" fill="#8fa6c0" font-size="13" text-anchor="middle">objects</text>
+<line x1="601" y1="82" x2="631" y2="82" stroke="#35d0e0" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="639" y="34" width="163" height="96" rx="12" fill="#0d1a2c" stroke="#35d0e0" stroke-width="2"/>
+<text x="720" y="76" fill="#35d0e0" font-size="18" font-weight="700" text-anchor="middle">MongoDB</text>
+<text x="720" y="100" fill="#8fa6c0" font-size="13" text-anchor="middle">searchable</text>
+<text x="410" y="226" fill="#f5b53f" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="0.5">100,000+ articles  ·  precision 78% → 83%</text>
+</svg>

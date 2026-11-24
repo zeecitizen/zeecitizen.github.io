@@ -34,11 +34,11 @@ Not a toy backtester. Turtle is a full research-to-production loop for a trading
 ## Inside the lab
 
 <div class="lab-gallery">
-  <figure class="lab-shot"><img src="/images/turtle-tv-uhv.png" alt="Turtle TV research dashboard with live chart, strategy parameters and tester metrics"><figcaption>Turtle TV &mdash; research dashboard &amp; strategy tester</figcaption></figure>
-  <figure class="lab-shot"><img src="/images/turtle-lifecycle.png" alt="Trade Lifecycle flow diagram from setups through filters to trades and exits, with MetaTrader 5 results"><figcaption>Trade Lifecycle &mdash; every path a trade takes, re-run in MT5</figcaption></figure>
-  <figure class="lab-shot"><img src="/images/turtle-lego.png" alt="Strategy decomposed into colour-coded swappable components with an MT5 equity curve"><figcaption>Strategy Lego &mdash; the strategy taken apart into swappable pieces</figcaption></figure>
-  <figure class="lab-shot"><img src="/images/turtle-ml.png" alt="Machine-learning entry filter: triple-barrier labels, purged cross-validation, stacked boosting, ONNX export"><figcaption>ML entry filter &mdash; triple-barrier labels, purged CV, ONNX</figcaption></figure>
-  <figure class="lab-shot"><img src="/images/golden-gravity.png" alt="Golden Gravity browser game rendered from live gold price movements"><figcaption>Golden Gravity &mdash; a game on the same live market engine</figcaption></figure>
+  <figure class="lab-shot"><a href="/images/turtle-tv-uhv.png" target="_blank" rel="noopener"><img src="/images/turtle-tv-uhv.png" alt="Turtle TV research dashboard with live chart, strategy parameters and tester metrics"></a><figcaption>Turtle TV &mdash; research dashboard &amp; strategy tester &middot; click to enlarge</figcaption></figure>
+  <figure class="lab-shot"><a href="/images/turtle-lifecycle.png" target="_blank" rel="noopener"><img src="/images/turtle-lifecycle.png" alt="Trade Lifecycle flow diagram from setups through filters to trades and exits, with MetaTrader 5 results"></a><figcaption>Trade Lifecycle &mdash; every path a trade takes, re-run in MT5</figcaption></figure>
+  <figure class="lab-shot"><a href="/images/turtle-lego.png" target="_blank" rel="noopener"><img src="/images/turtle-lego.png" alt="Strategy decomposed into colour-coded swappable components with an MT5 equity curve"></a><figcaption>Strategy Lego &mdash; the strategy taken apart into swappable pieces</figcaption></figure>
+  <figure class="lab-shot"><a href="/images/turtle-ml.png" target="_blank" rel="noopener"><img src="/images/turtle-ml.png" alt="Machine-learning entry filter: triple-barrier labels, purged cross-validation, stacked boosting, ONNX export"></a><figcaption>ML entry filter &mdash; triple-barrier labels, purged CV, ONNX</figcaption></figure>
+  <figure class="lab-shot"><a href="/images/golden-gravity.png" target="_blank" rel="noopener"><img src="/images/golden-gravity.png" alt="Golden Gravity browser game rendered from live gold price movements"></a><figcaption>Golden Gravity &mdash; a game on the same live market engine</figcaption></figure>
 </div>
 
 ## The engineering discipline that matters most

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 250" font-family="'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace">
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#35d0e0"/></marker></defs>
+<rect x="18" y="34" width="232" height="96" rx="12" fill="#0d1a2c" stroke="#35d0e0" stroke-width="2"/>
+<text x="134" y="88" fill="#35d0e0" font-size="18" font-weight="700" text-anchor="middle">test suite</text>
+<line x1="256" y1="82" x2="286" y2="82" stroke="#35d0e0" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="294" y="34" width="232" height="96" rx="12" fill="#0d1a2c" stroke="#35d0e0" stroke-width="2"/>
+<text x="410" y="76" fill="#35d0e0" font-size="18" font-weight="700" text-anchor="middle">multithreaded</text>
+<text x="410" y="100" fill="#8fa6c0" font-size="13" text-anchor="middle">Python automation</text>
+<line x1="532" y1="82" x2="562" y2="82" stroke="#35d0e0" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="570" y="34" width="232" height="96" rx="12" fill="#0d1a2c" stroke="#35d0e0" stroke-width="2"/>
+<text x="686" y="76" fill="#35d0e0" font-size="18" font-weight="700" text-anchor="middle">XMM 7360</text>
+<text x="686" y="100" fill="#8fa6c0" font-size="13" text-anchor="middle">4G LTE modem</text>
+<text x="410" y="226" fill="#f5b53f" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="0.5">shipped in the Apple iPhone 7  ·  HP ALM</text>
+</svg>
