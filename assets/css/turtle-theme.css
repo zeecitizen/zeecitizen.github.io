@@ -340,6 +340,32 @@ html, body { overflow-x: hidden; }
 .tt-portfolio-grid, .tt-portfolio-grid .list__item, .tt-portfolio-grid .archive__item { min-width: 0; max-width: 100%; }
 .tt-portfolio-grid img, .page__content img { max-width: 100%; height: auto; }
 
+/* ---- code: readable on the dark theme ------------------------------------ */
+/* inline code: the base theme gives it a near-white box */
+.page__content p > code, .page__content li > code, .page__content td > code,
+.page__content a > code, .page__content figcaption > code {
+  background: var(--panel-2); color: var(--green-2);
+  border: 1px solid var(--border); box-shadow: none; font-size: .86em;
+}
+/* code blocks: the base theme shrinks the text twice and adds an empty icon box */
+.page__content div.highlighter-rouge, .page__content figure.highlight {
+  font-size: .8rem; line-height: 1.6; padding: .9em 1.1em; margin: 1.2rem 0;
+}
+.page__content div.highlighter-rouge::before, .page__content figure.highlight::before { display: none; }
+.page__content div.highlighter-rouge .highlight, .page__content figure.highlight .highlight,
+.page__content div.highlighter-rouge pre, .page__content figure.highlight pre {
+  font-size: 1em; line-height: 1.6; margin: 0; padding: 0; border: 0; border-radius: 0;
+  background: transparent !important; box-shadow: none; overflow-x: auto;
+}
+.page__content .highlight code { font-size: 1em; color: var(--ink); }
+.page__content .highlight span { color: var(--ink); }
+.page__content .highlight .c, .page__content .highlight .c1, .page__content .highlight .cm, .page__content .highlight .cs { color: var(--muted); font-style: italic; }
+.page__content .highlight .k, .page__content .highlight .kn, .page__content .highlight .kd, .page__content .highlight .kc, .page__content .highlight .kr, .page__content .highlight .ow { color: var(--amber-2); }
+.page__content .highlight .s, .page__content .highlight .s1, .page__content .highlight .s2, .page__content .highlight .sb, .page__content .highlight .sd, .page__content .highlight .se, .page__content .highlight .si { color: var(--green-2); }
+.page__content .highlight .m, .page__content .highlight .mi, .page__content .highlight .mf, .page__content .highlight .mh, .page__content .highlight .il { color: var(--cyan); }
+.page__content .highlight .bp, .page__content .highlight .nb { color: var(--purple); }
+.page__content .highlight .o { color: var(--ink-soft); }
+
 @media (prefers-reduced-motion: reduce) {
   .author__avatar img { animation: none; }
   * { transition: none !important; }
