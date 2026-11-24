@@ -57,6 +57,6 @@ redirect_from:
 
 These days I build software with **agentic AI coding** day to day. My largest personal project, **Turtle**, is a live algorithmic-trading research platform developed almost entirely through agentic coding, built around a **MetaTrader&nbsp;5 validation harness** (with an ML entry filter in research) &mdash; see the [Financial Trading Software](/portfolio/1-trading-software/) page, or [how I work](/approach/).
 
-**Explore:** [Portfolio](/portfolio/) &middot; [How I Work](/approach/) &middot; [Publications](/publications/) &middot; [CV](/cv/)
+**Explore:** [Portfolio](/portfolio/) &middot; [Open Source](/opensource/) &middot; [How I Work](/approach/) &middot; [Publications](/publications/) &middot; [CV](/cv/)
 
 [GitHub](https://github.com/zeecitizen) &middot; [LinkedIn](https://www.linkedin.com/in/mohammadzeeshan) &middot; m.zeeshan@tum.de
