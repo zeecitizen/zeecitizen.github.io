@@ -14,9 +14,9 @@ I'm a **Senior Software Engineer** with 8+ years building backend, data and AI s
 
 **Selected impact:**
 
-- Led the CI/CD team on a **150-million-line** COBOL-to-Java mainframe migration &mdash; release time **2 weeks &rarr; 1 day**.
+- At **Deloitte**, led the CI/CD team on a **150-million-line** COBOL-to-Java mainframe migration &mdash; release time **2 weeks &rarr; 1 day**.
 - Built an AI tool translating a bank's HiveQL to BigQuery &mdash; **&minus;56%** manual effort across 207 scripts.
-- Raised a threat-intelligence classifier's precision from **78% to 83%** (human-in-the-loop) over 100,000+ security articles.
+- At **Huawei**, built an NLP pipeline in Python that crawls, parses, annotates and classifies **100,000+** security articles into STIX objects for cyber-security intelligence, with human-in-the-loop validation.
 - Shipped the test automation for the Intel modem used in the **Apple iPhone 7**.
 
 These days I build software with **agentic AI coding** day to day. My largest personal project, **Turtle**, is a live algorithmic-trading research platform developed almost entirely through agentic coding, built around a **MetaTrader&nbsp;5 validation harness** (with an ML entry filter in research) &mdash; see the [Financial Trading Software](/portfolio/1-trading-software/) page, or [how I work](/approach/).

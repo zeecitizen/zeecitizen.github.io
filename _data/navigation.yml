@@ -8,3 +8,5 @@ main:
     url: /publications/
   - title: "CV"
     url: /cv/
+  - title: "Student @MIT"
+    url: /mit/

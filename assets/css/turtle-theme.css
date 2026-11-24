@@ -305,6 +305,17 @@ tbody tr:nth-child(2n) { background: rgba(255,255,255,.02); }
 .dexter-lab .lab-stat b { display: block; color: var(--lab-green); font-size: 1.08rem; }
 .dexter-lab .lab-stat span { color: var(--tt-muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; }
 
+/* ---- photo gallery (Student @ MIT) ---- */
+.photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem; margin: 1.6rem 0; }
+@media (min-width: 40em) { .photo-grid { grid-template-columns: repeat(3, 1fr); } }
+.photo-grid a {
+  display: block; aspect-ratio: 4 / 3; overflow: hidden;
+  border: 2px solid var(--tt-border); border-radius: 10px; box-shadow: var(--tt-shadow);
+  cursor: zoom-in; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.photo-grid a:hover { transform: translateY(-3px); border-color: var(--tt-cyan); box-shadow: 0 0 22px -6px var(--tt-glow-str); }
+.photo-grid img { width: 100%; height: 100%; object-fit: cover; display: block; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
+
 /* ---- mobile safety: prevent any horizontal overflow ---- */
 html, body { overflow-x: hidden; }
 .page__content { overflow-wrap: break-word; }
