@@ -28,7 +28,7 @@
 }
 
 /* ---- base ---------------------------------------------------------------- */
-html { scrollbar-color: var(--tt-cyan-dim) var(--tt-bg); }
+html { scrollbar-color: var(--tt-cyan-dim) var(--tt-bg); background-color: var(--tt-bg); }
 body {
   background:
     radial-gradient(1100px 620px at 50% -8%, var(--tt-bg-hi), rgba(8,12,22,0) 62%),
@@ -128,21 +128,25 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--tt-mono); color: var(--tt-ink); }
 .archive__item-title a:hover { color: var(--tt-cyan-2); }
 .archive__item-excerpt { color: var(--tt-ink-soft); }
 
-/* turn each grid tile into a glowing card */
-.grid__item {
+/* portfolio: a responsive grid of glowing cards */
+.tt-portfolio-grid { display: grid; grid-template-columns: 1fr; gap: 1.3rem; margin-top: 1.5rem; }
+@media (min-width: 40em) { .tt-portfolio-grid { grid-template-columns: 1fr 1fr; } }
+.tt-portfolio-grid .list__item { margin: 0; }
+.tt-portfolio-grid .archive__item {
+  height: 100%;
   background: var(--tt-panel);
   border: 1px solid var(--tt-border);
   border-radius: 12px;
-  padding: 1rem 1.2rem 1.25rem;
+  padding: 1.1rem 1.25rem 1.3rem;
   box-shadow: var(--tt-shadow);
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
-.grid__item:hover {
+.tt-portfolio-grid .archive__item:hover {
   transform: translateY(-4px);
   border-color: var(--tt-cyan);
   box-shadow: 0 16px 36px -16px rgba(0,0,0,.9), 0 0 24px -6px var(--tt-glow-str);
 }
-.grid__item .archive__item-title { margin-top: 0; }
+.tt-portfolio-grid .archive__item-title { margin-top: 0; }
 .archive__item-excerpt img {
   display: block; margin-top: .6rem;
   border: 1px solid var(--tt-border); border-radius: 8px; box-shadow: var(--tt-shadow);
