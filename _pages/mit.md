@@ -38,4 +38,23 @@ I spent the final semester of my TU Munich master's as a **visiting student at M
   <a href="/images/mit/dsc_0749.jpg" target="_blank" rel="noopener"><img src="/images/mit/dsc_0749.jpg" alt="MIT campus photo 26" loading="lazy"></a>
   <a href="/images/mit/dsc_0768.jpg" target="_blank" rel="noopener"><img src="/images/mit/dsc_0768.jpg" alt="MIT campus photo 27" loading="lazy"></a>
   <a href="/images/mit/dsc_0785.jpg" target="_blank" rel="noopener"><img src="/images/mit/dsc_0785.jpg" alt="MIT campus photo 28" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0002.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0002.jpg" alt="MIT campus photo 29" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0003.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0003.jpg" alt="MIT campus photo 30" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0018.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0018.jpg" alt="MIT campus photo 31" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0019.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0019.jpg" alt="MIT campus photo 32" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0032.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0032.jpg" alt="MIT campus photo 33" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0050.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0050.jpg" alt="MIT campus photo 34" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0645.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0645.jpg" alt="MIT campus photo 35" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0647.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0647.jpg" alt="MIT campus photo 36" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0658.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0658.jpg" alt="MIT campus photo 37" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0662.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0662.jpg" alt="MIT campus photo 38" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0667.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0667.jpg" alt="MIT campus photo 39" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0671.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0671.jpg" alt="MIT campus photo 40" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0680.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0680.jpg" alt="MIT campus photo 41" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0681.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0681.jpg" alt="MIT campus photo 42" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0682.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0682.jpg" alt="MIT campus photo 43" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0683.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0683.jpg" alt="MIT campus photo 44" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0684.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0684.jpg" alt="MIT campus photo 45" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0686.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0686.jpg" alt="MIT campus photo 46" loading="lazy"></a>
+  <a href="/images/mit/ii-dsc-0690-1.jpg" target="_blank" rel="noopener"><img src="/images/mit/ii-dsc-0690-1.jpg" alt="MIT campus photo 47" loading="lazy"></a>
 </div>
