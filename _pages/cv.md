@@ -11,48 +11,32 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, National University of Computer and Emerging Sciences, 2008-2012
-* M.Sc. in Computer Science, Technical University of Munich, 2015-2017
-* Semester Abroad at Massachusetts Institute of Technology, 2017
+* **M.Sc. Computer Science** (Artificial Intelligence), Technical University of Munich, 2014&ndash;2017
+  * Final semester as a visiting student at the **Massachusetts Institute of Technology (MIT)**, 2017
+* **B.Sc. Computer Science** (Dean's Honor List), FAST &ndash; National University of Computer and Emerging Sciences, 2008&ndash;2012
 
-Work experience
+Experience
 ======
-* Senior Software Developer, Navigation Database Compiler, Full-time
-  * Samsung, HARMAN Connected Car
-  * Duties included: Implementing features in Java for navigation database (NDB) compiler.
+* **Senior Consultant** &mdash; Deloitte Consulting, Munich &middot; 2022&ndash;2025
+  * Led the CI/CD team on a 150-million-line COBOL-to-Java mainframe migration (release time: 2 weeks &rarr; 1 day).
+  * Built an AI tool translating HiveQL to BigQuery for a bank's cloud migration (&minus;56% manual effort).
+* **R&amp;D Software Engineer** &mdash; Huawei German Research Center, Munich &middot; 2020&ndash;2022
+  * NLP pipeline classifying 100,000+ security articles for cyber threat intelligence.
+* **Software Engineer (BMW Group)** &mdash; Pentasys / AUSY, Munich &middot; 2019&ndash;2020
+  * Java plugins for BMW's vehicle-electronics toolchain (AUTOSAR).
+* **Senior Developer** &mdash; Samsung HARMAN, Garching &middot; 2018
+  * Navigation-database compiler building HD maps for BMW's autonomous-driving programme.
+* **Software Developer** &mdash; Habib Bank AG Z&uuml;rich, Dubai &middot; 2012&ndash;2014
+  * UAE Central Bank Direct Debit integration; BOPCUS reporting (23,000+ transactions/day).
 
-* Software Engineer, Full-time
-  * GoSmoove GmbH
-  * Duties included: Implemented Java web backend. Coded payment processing, partner api integration.
+Earlier roles
+======
+* Werkstudent (Data Scientist), Allianz SE, Munich &middot; 2016&ndash;2017
+* Werkstudent (Software Tools Developer), Intel &mdash; modem team, later Apple &middot; 2015&ndash;2016
 
-* Software Developer, Full-time
-  * Habib Bank AG Zürich
-  * Duties included: Implemented UAE Direct Debit System (UAEDDS) for bank.
-  
 Skills
 ======
-* Java (7/8)
-* SQL
-* Machine Learning
- 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* **Languages:** Python, Java, SQL, JavaScript, C/C++, Bash
+* **Cloud &amp; DevOps:** AWS, GCP (BigQuery), Docker, Jenkins, CI/CD, Git, Linux
+* **Backend &amp; data:** Spring, REST APIs, PostgreSQL, MongoDB
+* **AI:** machine learning, deep learning (CNNs), NLP, agentic AI / LLM tools

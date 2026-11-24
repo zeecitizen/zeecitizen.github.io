@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "M. Zeeshan"
 title_separator          : "-"
 name                     : &name "Mohammad Zeeshan"
-description              : &description "Software Engineer Java/ML"
+description              : &description "Senior Software Engineer - Python, Java, Cloud & AI"
 url                      : https://zeecitizen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zeecitizen.github.io"
@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Mohammad Zeeshan"
   avatar           : "profile.png"
-  bio              : "Computer Scientist. MSc. Informatik graduate of Technical University of Munich. Software Engineer in Java. Worked at Samsung, Intel, Allianz."
+  bio              : "Senior Software Engineer. Python & Java, cloud, data and AI. Deloitte, Huawei, BMW, Samsung."
   location         : "Munich"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  googlescholar    :
+  email            : "m.zeeshan@tum.de"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,12 +96,12 @@ author:
   facebook         :
   foursquare       :
   github           : "zeecitizen"
-  google_plus      : "https://drive.google.com/drive/folders/1WjMT6TeVe4Cj9VTxiudEO3q5yhJ5RsGH?usp=sharing"
+  google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "mohammadzeeshan"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
