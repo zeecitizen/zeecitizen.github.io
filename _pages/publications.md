@@ -11,7 +11,7 @@ My research work, then university coursework and general-audience writing.
 
 ## Research
 
-**Software Architecture for Crowdsourced Idea Generation** &mdash; M.Sc. thesis, TU Munich (2017)
+**Software Architecture for Crowdsourced Idea Generation**
 <br/>Researched on campus at the **MIT Center for Collective Intelligence**: migrating the XCoLab platform from a Liferay monolith to containerised **microservices** (Spring Boot, Docker) so each domain feature could be deployed and scaled independently.
 
 **Machine Learning in Financial Insurance** &mdash; industry research report, Allianz SE (2017) &middot; [PDF]({{ base_path }}/files/Maschinelles_Lernen_in_der_Finanzversicherung_mohammad_zeeshan.pdf)
