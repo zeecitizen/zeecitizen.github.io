@@ -12,9 +12,6 @@ redirect_from:
 
 I'm a **Senior Software Engineer** with 8+ years building backend, data and AI systems in **Python and Java** &mdash; from cloud infrastructure to web front ends &mdash; for banking, automotive and cybersecurity. I've worked with **Deloitte, Huawei, BMW and Samsung**, and I hold an M.Sc. in Computer Science (Artificial Intelligence) from **TU Munich**, with my final semester as a visiting student at **MIT**.
 
-{: .notice--info}
-**Open to Senior / Staff roles** in backend, data-platform or ML engineering &mdash; **Munich or remote (EU)**. EU work authorization &middot; German permanent residence (Niederlassungserlaubnis). Reach me at **m.zeeshan@tum.de**.
-
 **Selected impact:**
 
 - Led the CI/CD team on a **150-million-line** COBOL-to-Java mainframe migration &mdash; release time **2 weeks &rarr; 1 day**.
