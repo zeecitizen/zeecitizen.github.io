@@ -4,7 +4,9 @@ excerpt: "Built features in the navigation-database compiler that generates HD m
 collection: portfolio
 ---
 
-Developed features for the navigation-database (NDB) compiler that builds **HD maps for BMW's autonomous-driving programme** at Samsung HARMAN's Connected Car division. Implemented lane-restriction support, internationalised warning signs, and fixed non-determinism bugs in the compiler output.
+At Samsung's Connected Car division (HARMAN), I worked on the compiler that builds the **HD maps** BMW's autonomous-driving programme relies on &mdash; the high-definition geo-data a self-driving car uses to understand the road ahead.
+
+**What I did.** Developed features for the navigation-database (NDB) compiler: implemented **lane-restriction** support, **internationalised** the warning signs, and fixed **non-determinism** bugs so the compiler produced identical, reproducible output every run &mdash; essential for a safety-critical pipeline. The work meant analysing and improving an existing Java solution of several million lines.
 
 **Tech:** Java, PostgreSQL, JUnit, Mockito, Maven, Jenkins, SonarQube.
 

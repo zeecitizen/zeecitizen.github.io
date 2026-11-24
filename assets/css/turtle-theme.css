@@ -1,0 +1,227 @@
+/* ============================================================================
+   Turtle neon-terminal theme  ·  overrides Minimal Mistakes / AcademicPages
+   Inspired by the Turtle TV "Trade Lifecycle" page: deep navy, cyan glow,
+   monospace, green/red semantics, gold accents. Plain CSS, loaded after
+   main.css via _includes/head/custom.html so it cascades on top.
+   ============================================================================ */
+
+:root {
+  --tt-bg:        #080c16;
+  --tt-bg-hi:     #0d1526;
+  --tt-panel:     #0e1626;
+  --tt-panel-2:   #121d31;
+  --tt-ink:       #dce6f2;
+  --tt-ink-soft:  #aebdd1;
+  --tt-muted:     #8295ad;
+  --tt-cyan:      #36e6e0;
+  --tt-cyan-2:    #6ef4ef;
+  --tt-cyan-dim:  #15a39f;
+  --tt-green:     #39e0a0;
+  --tt-red:       #fb6f92;
+  --tt-gold:      #f5b53f;
+  --tt-blue:      #3fa9ff;
+  --tt-border:    #1c2b44;
+  --tt-glow:      rgba(54,230,224,.22);
+  --tt-glow-str:  rgba(54,230,224,.45);
+  --tt-shadow:    0 12px 30px -14px rgba(0,0,0,.85);
+  --tt-mono:      'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ---- base ---------------------------------------------------------------- */
+html { scrollbar-color: var(--tt-cyan-dim) var(--tt-bg); }
+body {
+  background:
+    radial-gradient(1100px 620px at 50% -8%, var(--tt-bg-hi), rgba(8,12,22,0) 62%),
+    var(--tt-bg);
+  background-attachment: fixed;
+  color: var(--tt-ink);
+  font-family: var(--tt-mono);
+  -webkit-font-smoothing: antialiased;
+}
+#main, .initial-content, .page, .archive { background: transparent; }
+
+a { color: var(--tt-cyan); transition: color .15s ease, text-shadow .15s ease; }
+a:hover, a:focus { color: var(--tt-cyan-2); text-shadow: 0 0 10px var(--tt-glow); }
+
+::selection { background: rgba(54,230,224,.30); color: #fff; }
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--tt-bg); }
+::-webkit-scrollbar-thumb { background: var(--tt-border); border-radius: 8px; border: 3px solid var(--tt-bg); }
+::-webkit-scrollbar-thumb:hover { background: var(--tt-cyan-dim); }
+
+/* ---- headings ------------------------------------------------------------ */
+h1, h2, h3, h4, h5, h6 { font-family: var(--tt-mono); color: var(--tt-ink); }
+.page__content h1, .page__content h2, .page__title, .archive__subtitle {
+  color: var(--tt-cyan);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  text-shadow: 0 0 16px var(--tt-glow);
+  border-bottom: 1px solid var(--tt-border);
+}
+.page__content h3, .page__content h4 { color: var(--tt-cyan-2); letter-spacing: .03em; }
+.page__content strong { color: #fff; }
+.page__lead { color: var(--tt-ink-soft); }
+
+/* ---- masthead / nav ------------------------------------------------------ */
+.masthead {
+  position: relative;
+  background: rgba(8,12,22,.82);
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  border-bottom: 1px solid var(--tt-border);
+}
+.masthead::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--tt-cyan), transparent);
+  opacity: .55;
+}
+.greedy-nav { background: transparent; }
+.site-title {
+  color: var(--tt-cyan) !important;
+  text-transform: uppercase; letter-spacing: .16em;
+  text-shadow: 0 0 14px var(--tt-glow);
+}
+.site-subtitle { color: var(--tt-muted); }
+.greedy-nav a {
+  color: var(--tt-ink-soft) !important;
+  font-size: .72em; text-transform: uppercase; letter-spacing: .14em;
+}
+.greedy-nav a:hover { color: var(--tt-cyan) !important; }
+.greedy-nav .visible-links a::before {
+  height: 2px; background: var(--tt-cyan); box-shadow: 0 0 8px var(--tt-cyan);
+}
+.greedy-nav__toggle, .greedy-nav button { color: var(--tt-cyan); }
+.greedy-nav .hidden-links { background: var(--tt-panel); border: 1px solid var(--tt-border); box-shadow: var(--tt-shadow); }
+.greedy-nav .hidden-links a { color: var(--tt-ink-soft) !important; }
+.greedy-nav .hidden-links a:hover { background: var(--tt-panel-2); color: var(--tt-cyan) !important; }
+.greedy-nav .hidden-links::before { border-bottom-color: var(--tt-panel); }
+
+/* ---- author sidebar ------------------------------------------------------ */
+.author__avatar img {
+  border: 2px solid var(--tt-cyan);
+  box-shadow: 0 0 0 4px rgba(54,230,224,.07), 0 0 26px -4px var(--tt-glow-str);
+  animation: tt-pulse 3.4s ease-in-out infinite;
+}
+@keyframes tt-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(54,230,224,.06), 0 0 20px -6px var(--tt-glow-str); }
+  50%      { box-shadow: 0 0 0 4px rgba(54,230,224,.13), 0 0 34px -2px var(--tt-glow-str); }
+}
+.author__name { color: var(--tt-cyan); text-transform: uppercase; letter-spacing: .08em; }
+.author__bio { color: var(--tt-muted); }
+.author__urls {
+  background: var(--tt-panel); border: 1px solid var(--tt-border);
+  border-radius: 10px; box-shadow: var(--tt-shadow);
+}
+.author__urls::before { border-color: transparent transparent var(--tt-border) transparent; }
+.author__urls::after  { border-color: transparent transparent var(--tt-panel) transparent; }
+.author__urls li { color: var(--tt-ink-soft); }
+.author__urls a { color: var(--tt-ink-soft) !important; }
+.author__urls a:hover { color: var(--tt-cyan) !important; text-decoration: none; }
+.author__urls a .fa, .author__urls a .svg-inline--fa, .author__urls a .ai {
+  color: var(--tt-cyan); transition: color .15s ease;
+}
+.author__urls-wrapper button { color: var(--tt-cyan); border-color: var(--tt-border); }
+
+/* ---- portfolio / archive cards ------------------------------------------ */
+.archive__item-title { margin-top: .7em; font-family: var(--tt-mono); }
+.archive__item-title, .archive__item-title a { color: var(--tt-cyan); }
+.archive__item-title a:hover { color: var(--tt-cyan-2); }
+.archive__item-excerpt { color: var(--tt-ink-soft); }
+
+/* turn each grid tile into a glowing card */
+.grid__item {
+  background: var(--tt-panel);
+  border: 1px solid var(--tt-border);
+  border-radius: 12px;
+  padding: 1rem 1.2rem 1.25rem;
+  box-shadow: var(--tt-shadow);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.grid__item:hover {
+  transform: translateY(-4px);
+  border-color: var(--tt-cyan);
+  box-shadow: 0 16px 36px -16px rgba(0,0,0,.9), 0 0 24px -6px var(--tt-glow-str);
+}
+.grid__item .archive__item-title { margin-top: 0; }
+.archive__item-excerpt img {
+  display: block; margin-top: .6rem;
+  border: 1px solid var(--tt-border); border-radius: 8px; box-shadow: var(--tt-shadow);
+}
+
+/* single-page content images (screenshots) */
+.page__content img {
+  border: 1px solid var(--tt-border); border-radius: 10px; box-shadow: var(--tt-shadow);
+  transition: box-shadow .2s ease, border-color .2s ease;
+}
+.page__content img:hover { border-color: var(--tt-cyan); box-shadow: 0 0 26px -6px var(--tt-glow-str); }
+
+/* ---- buttons ------------------------------------------------------------- */
+.btn {
+  font-family: var(--tt-mono); text-transform: uppercase; letter-spacing: .1em;
+  font-size: .74em; border-radius: 8px;
+}
+.btn--primary, .btn--info, .btn--inverse, .btn--success, .page__content a.btn {
+  background: transparent !important;
+  color: var(--tt-cyan) !important;
+  border: 1px solid var(--tt-cyan);
+  box-shadow: inset 0 0 0 1px rgba(54,230,224,.06);
+  transition: all .18s ease;
+}
+.btn--primary:hover, .btn--info:hover, .btn--inverse:hover, .btn--success:hover, .page__content a.btn:hover {
+  background: rgba(54,230,224,.12) !important;
+  color: var(--tt-cyan-2) !important;
+  box-shadow: 0 0 20px -4px var(--tt-glow-str);
+}
+
+/* ---- publications list --------------------------------------------------- */
+.list__item .archive__item-title { margin-top: 1em; }
+.archive__item-title a { text-decoration: none; }
+.page__meta, .page__taxonomy, .archive__item-excerpt small { color: var(--tt-muted); }
+
+/* ---- code / quotes / tables / rules ------------------------------------- */
+code, tt, kbd, samp { background: var(--tt-panel-2); color: var(--tt-cyan-2); border: 1px solid var(--tt-border); border-radius: 5px; }
+pre, .highlight, figure.highlight, div.highlighter-rouge {
+  background: var(--tt-panel-2) !important; color: var(--tt-ink); border: 1px solid var(--tt-border); border-radius: 8px;
+}
+pre code { background: transparent; border: 0; }
+blockquote { border-left: 4px solid var(--tt-cyan); background: var(--tt-panel); color: var(--tt-ink-soft); border-radius: 0 8px 8px 0; }
+hr { border-color: var(--tt-border); }
+table { border: 1px solid var(--tt-border); box-shadow: var(--tt-shadow); }
+th { background: var(--tt-panel-2); color: var(--tt-cyan); text-transform: uppercase; letter-spacing: .04em; border-color: var(--tt-border); }
+td { border-color: var(--tt-border); color: var(--tt-ink-soft); }
+tbody tr { background: transparent; }
+tbody tr:nth-child(2n) { background: rgba(255,255,255,.02); }
+
+/* ---- notices ------------------------------------------------------------- */
+.notice, .notice--primary, .notice--info, .notice--warning, .notice--success, .notice--danger {
+  background: var(--tt-panel) !important; color: var(--tt-ink-soft) !important;
+  border: 1px solid var(--tt-border); border-left-width: 4px; border-radius: 8px; box-shadow: var(--tt-shadow);
+}
+.notice--success { border-left-color: var(--tt-green); }
+.notice--danger  { border-left-color: var(--tt-red); }
+.notice--warning { border-left-color: var(--tt-gold); }
+.notice--info, .notice--primary { border-left-color: var(--tt-cyan); }
+
+/* ---- footer -------------------------------------------------------------- */
+.page__footer { background: var(--tt-bg) !important; color: var(--tt-muted); border-top: 1px solid var(--tt-border); }
+.page__footer::before { content: ""; display: block; height: 1px; background: linear-gradient(90deg, transparent, var(--tt-cyan), transparent); opacity: .4; margin-bottom: 1.3em; }
+.page__footer a { color: var(--tt-muted) !important; }
+.page__footer a:hover { color: var(--tt-cyan) !important; }
+.page__footer-follow .social-icons a, .page__footer-follow li a { color: var(--tt-muted) !important; }
+.page__footer-follow .social-icons .fa, .page__footer-follow .social-icons .svg-inline--fa { color: var(--tt-cyan); }
+.page__footer-follow a:hover .fa { color: var(--tt-cyan-2); }
+
+/* ---- pagination ---------------------------------------------------------- */
+.pagination a { color: var(--tt-ink-soft); border: 1px solid var(--tt-border); background: var(--tt-panel); }
+.pagination a:hover { border-color: var(--tt-cyan); color: var(--tt-cyan); }
+.pagination .current { background: var(--tt-cyan) !important; color: var(--tt-bg) !important; border-color: var(--tt-cyan); }
+
+/* ---- small helpers used in content -------------------------------------- */
+.tt-up  { color: var(--tt-green); }
+.tt-down{ color: var(--tt-red); }
+.tt-gold{ color: var(--tt-gold); }
+
+@media (prefers-reduced-motion: reduce) {
+  .author__avatar img { animation: none; }
+  * { transition: none !important; }
+}

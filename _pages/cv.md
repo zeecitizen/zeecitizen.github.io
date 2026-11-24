@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<a href="{{ base_path }}/files/Mohammad_Zeeshan_CV.pdf" class="btn btn--primary">Download CV (PDF)</a>
+
 Education
 ======
 * **M.Sc. Computer Science** (Artificial Intelligence), Technical University of Munich, 2014&ndash;2017
