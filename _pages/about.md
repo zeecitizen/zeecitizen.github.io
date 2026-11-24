@@ -10,7 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-I'm a **Senior Software Engineer** with 8+ years building backend, data and AI systems in **Python and Java** &mdash; from cloud infrastructure to web front ends &mdash; for banking, automotive and cybersecurity. I've worked with **Deloitte, Huawei, BMW and Samsung**, and I hold an M.Sc. in Computer Science (Artificial Intelligence) from **TU Munich**, with my final semester as a visiting student at **MIT**.
+**Senior Software Engineer** with 8+ years of full-time experience building backend, data and AI systems in Python and Java, from cloud infrastructure to web front ends, for banking, automotive and cybersecurity (Deloitte, Huawei, BMW, Samsung). Specialised in modernising and migrating large systems. At Deloitte, led the CI/CD team on a 150-million-line COBOL-to-Java mainframe migration. Earlier work includes map software for BMW's autonomous-driving programme and test automation for the Intel modem used in the Apple iPhone. M.Sc. Computer Science (Artificial Intelligence), TU Munich.
 
 **Selected impact:**
 
