@@ -4,6 +4,8 @@ excerpt: "A web-based AI tool that translates HiveQL to BigQuery SQL for a bank'
 collection: portfolio
 ---
 
+<img src="/images/proj-hiveql.svg" alt="Architecture diagram" class="proj-diagram">
+
 **Context.** A major bank was moving its on-premise Hadoop/Hive data platform to Google Cloud. Thousands of HiveQL scripts had to be rewritten in BigQuery SQL &mdash; by hand this is slow, repetitive and easy to get subtly wrong.
 
 **What I did.** Designed and built a web-based tool that translates HiveQL into BigQuery SQL, combining rule-based transforms with LLM-assisted rewriting and a validation step, so an engineer reviews and accepts each result rather than trusting a black box.
