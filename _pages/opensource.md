@@ -3,17 +3,129 @@ layout: single
 title: "Open Source"
 permalink: /opensource/
 author_profile: true
-excerpt: "A fix under review at NASA's OnAIR, and 56 commits on MIT's XCoLab platform."
+excerpt: "Open pull requests to JAX and to NASA's OnAIR, and 56 commits on MIT's XCoLab platform."
 ---
 
 {% include base_path %}
 
 <div class="dexter-lab" markdown="1">
 
-Two contributions to public codebases: a fix now under review at NASA, and my 2017 work on the platform behind MIT's Climate CoLab.
+Three contributions to public codebases, newest first: two fixes awaiting review, in JAX and in NASA's OnAIR, and my 2017 work on the platform behind MIT's Climate CoLab.
 
+- [**JAX** (2026)](#jax): an open pull request with a one-line fix to `jax.numpy.array_equiv`. JAX is the numerical computing library developed mainly at Google.
 - [**NASA OnAIR** (2026)](#nasa-onair): an open pull request fixing telemetry data loss in the Redis adapter.
 - [**MIT XCoLab** (2017)](#mit-xcolab): 56 commits on the collaboration platform of the MIT Center for Collective Intelligence, including a site-wide notifications feature.
+
+## JAX (2026) {#jax}
+
+<span class="lab-badge">JAX &middot; pull request open</span>
+
+**A one-line fix in JAX**, the open-source library for numerical computing and machine-learning research developed mainly at Google. `jax.numpy.array_equiv` raised an error in a case where its own documentation, and NumPy, say the answer is `False`. The pull request was opened on 25&nbsp;November&nbsp;2026 and is awaiting review by the maintainers. It has not been merged.
+
+<a class="lab-btn" href="https://github.com/jax-ml/jax/pull/42874">Pull request #42874 on GitHub &rarr;</a>
+
+<div class="lab-stats">
+  <div class="lab-stat"><b>+12 lines</b><span>2 in the function, 10 of regression test</span></div>
+  <div class="lab-stat"><b>4 of 4</b><span>new test cases fail before the fix, pass after</span></div>
+  <div class="lab-stat"><b>722 checks</b><span>against NumPy: 120 raised an error before, none after</span></div>
+  <div class="lab-stat"><b>JAX 0.12.1</b><span>the current release has the bug too</span></div>
+</div>
+
+### The project {#jax-the-project}
+
+[JAX](https://github.com/jax-ml/jax) is, in its own words, "a Python library for accelerator-oriented array computation and program transformation, designed for high-performance numerical computing and large-scale machine learning". It is developed mainly at Google, describes itself as a research project and not an official Google product, and takes outside contributions under Google's contributor agreement.
+
+Its `jax.numpy` module re-implements NumPy's interface, so that code written for NumPy can be differentiated, compiled and run on accelerators. It aims to match NumPy, and documents the places where it deliberately does not.
+
+### The bug {#jax-the-bug}
+
+`array_equiv(a, b)` answers one question: are these two arrays equal, if broadcasting is allowed? When the shapes cannot be broadcast at all, the answer is `False`. JAX's documentation says so, and that is what NumPy returns. JAX did this only when the two arrays had a different number of dimensions:
+
+| Shapes compared | NumPy | Unmodified JAX | With the fix |
+|---|---|---|---|
+| `(2,)` and `(2, 4)` | `False` | `False` | `False` |
+| `(2,)` and `(3,)` | `False` | *TypeError* | `False` |
+| `(2, 3)` and `(2, 4)` | `False` | *TypeError* | `False` |
+
+```python
+import numpy as np
+import jax.numpy as jnp
+
+np.array_equiv(np.array([1, 2]), np.array([1, 2, 3]))
+# False
+jnp.array_equiv(jnp.array([1, 2]), jnp.array([1, 2, 3]))
+# TypeError: eq got incompatible shapes for broadcasting: (2,), (3,).
+```
+
+The function compared the arrays inside a `try` and treated a `ValueError` as "these shapes do not fit". JAX raises `ValueError` when the numbers of dimensions differ. When they are the same, the error comes from the lower-level comparison in `jax.lax` and is a `TypeError`, which went straight past the `except`. The existing tests for this function use shapes that can be broadcast, or shapes with different numbers of dimensions, so this case was not covered. The bug is in the current release, 0.12.1, as well as on the main branch.
+
+### The fix {#jax-the-fix}
+
+```diff
+   a1, a2 = asarray(a1), asarray(a2)
+   try:
++    # equal raises TypeError for same-rank shape mismatches (jax-ml/jax#42873)
++    lax.broadcast_shapes(np.shape(a1), np.shape(a2))
+     eq = ufuncs.equal(a1, a2)
+   except ValueError:
+     # shapes are not broadcastable
+     return array(False)
+```
+
+Before comparing, the function now asks JAX whether the two shapes can be broadcast. That helper raises `ValueError` for any pair that cannot, whatever the number of dimensions, and the `except` that was already there turns it into `False`. NumPy's own `array_equiv` is built the same way: check the shapes, then compare.
+
+### Why not the obvious fix {#jax-why-not-the-obvious-fix}
+
+The obvious fix is to catch `TypeError` as well. That was the first version, and it passed everything: all 722 comparisons against NumPy and the whole test file. It had a side effect. JAX also raises `TypeError` for mistakes that have nothing to do with shapes, and the wider `except` turned these three into a silent `False`:
+
+| Input | Unmodified JAX | Wider except | With the fix |
+|---|---|---|---|
+| shapes `(2,)` and `(3,)` | *TypeError* | `False` | `False` |
+| a value that escaped from a compiled function (a leaked tracer) | error | *`False`* | error |
+| two arrays of `float0`, the type JAX uses for gradients of integers | error | *`False`* | error |
+| a random-number key compared with an integer | error | *`False`* | error |
+
+A review by three separate AI agents, run before submission, caught this, and the fix was narrowed to the single line above. The three cases in the table stay errors. One side effect is known: with symbolic shapes (`jax.export`) that cannot be proved equal, the function now returns `False`, as `array_equal` already does, where it used to stop with the same error.
+
+### How it was verified {#jax-how-it-was-verified}
+
+- **Against NumPy, 722 comparisons.** Every ordered pairing of 19 shapes (361 pairs), from scalars and empty arrays up to three dimensions, each with equal and with different values. In JAX's default configuration, the unmodified code agreed with NumPy on 602 and raised on the other 120, all of them pairs with the same number of dimensions. With the fix it agrees on all 722.
+- **A regression test that fails when it should.** The new test does not assert `False`. It compares four incompatible shape pairs with NumPy's answer, with and without `jit`, JAX's compiler. All four fail on unmodified JAX with the same kind of `TypeError`, and pass with the fix.
+- **Errors that should stay errors.** The three unrelated cases in the table above still raise as before.
+- **The whole test file.** JAX's main NumPy test file (`tests/lax_numpy_test.py`) still passes with the change: 3,413 tests with the default 32-bit types and 3,453 with 64-bit types enabled.
+
+**Still pending:** JAX's own CI has not run on the pull request yet, because runs from first-time contributors wait for a maintainer's approval. JAX's contributing guide adds that a larger set of tests, including GPU and TPU backends, starts only once a pull request has been reviewed. Of the automatic checks, Google's contributor-agreement check has run and passes. The numbers above are from my own machine (Windows, CPU only).
+
+### How the bug was found {#jax-how-the-bug-was-found}
+
+By comparing JAX with NumPy directly. A script ran 264 `jax.numpy` functions and their NumPy counterparts on awkward inputs: booleans, small integers, NaN and infinity, empty and zero-dimensional arrays, mismatched shapes. Most of the differences it reported come from JAX's different rules for result types, which are deliberate. This one contradicted the function's own documentation and had not been reported.
+
+### Decisions that shaped it {#jax-decisions-that-shaped-it}
+
+- **Follow the project's conventions.** An issue first ([#42873](https://github.com/jax-ml/jax/issues/42873)), then a single commit that refers to it, a parameterised test in the same form as the other regression tests in that file, and no change beyond the fix.
+- **Small on purpose.** The change touches only the case in the issue. The review also noted that, under JAX's optional strict settings, this function returns `False` in some cases where NumPy returns `True`. That was already so, may be intended, and is left alone.
+
+### How it was built {#jax-how-it-was-built}
+
+As with the NASA fix below, I worked with an AI coding agent (Claude Code). The agent ran the comparison against NumPy that surfaced the bug, wrote the fix and the test, and ran the verification. That included the review by three separate agents, which found the problem with the first version of the fix. I read the change, ran the regression tests, wrote the issue and the pull request description in my own words (with grammar help), signed Google's contributor agreement, made the commit and submitted the pull request myself.
+
+### Status {#jax-status}
+
+- **Pull request [#42874](https://github.com/jax-ml/jax/pull/42874):** open since 25 November 2026, awaiting maintainer review.
+- **Issue [#42873](https://github.com/jax-ml/jax/issues/42873):** open, linked to the pull request.
+
+*Last updated 25 November 2026.*
+
+### Screenshots {#jax-screenshots}
+
+<div class="lab-gallery lab-gallery--compact">
+  <figure class="lab-shot lab-shot--wide"><a href="/images/opensource/jax-pr-42874.png" target="_blank" rel="noopener"><img src="/images/opensource/jax-pr-42874.png" width="1440" height="845" alt="Pull request 42874 on the jax-ml/jax repository, open, with its description and one commit" loading="lazy"></a><figcaption>Pull request #42874 on jax-ml/jax &mdash; open, awaiting review &middot; click to enlarge</figcaption></figure>
+  <figure class="lab-shot lab-shot--wide"><a href="/images/opensource/jax-diff.png" target="_blank" rel="noopener"><img src="/images/opensource/jax-diff.png" width="1440" height="1100" alt="The Files changed tab of the pull request: two added lines in the function and a ten-line regression test" loading="lazy"></a><figcaption>The whole change: two lines in the function (a comment and the check) and a ten-line regression test</figcaption></figure>
+  <figure class="lab-shot"><a href="/images/opensource/jax-issue-42873.png" target="_blank" rel="noopener"><img src="/images/opensource/jax-issue-42873.png" width="1440" height="760" alt="Issue 42873 on jax-ml/jax with the reproduction and the linked pull request" loading="lazy"></a><figcaption>Issue #42873: the report and its reproduction. The issue is open; its status badge reads &ldquo;Backlog&rdquo;</figcaption></figure>
+  <figure class="lab-shot"><a href="/images/opensource/jax-cla-check.png" target="_blank" rel="noopener"><img src="/images/opensource/jax-cla-check.png" width="1440" height="615" alt="The Checks tab of the pull request with the Google CLA check marked as succeeded" loading="lazy"></a><figcaption>Google's contributor-agreement check on the pull request: passed. The test workflows have not run yet; they wait for a maintainer's approval</figcaption></figure>
+</div>
+
+---
 
 ## NASA OnAIR (2026) {#nasa-onair}
 
