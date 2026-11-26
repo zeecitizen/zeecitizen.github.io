@@ -7,7 +7,8 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Zeeshan M. Khan"
+title                    : "Mohammad Zeeshan"
+home_title               : "Mohammad Zeeshan - Senior Software Engineer, Munich"
 title_separator          : "-"
 name                     : &name "Mohammad Zeeshan"
 description              : &description "Senior Software Engineer - Python, Java, Cloud & AI"
@@ -69,6 +70,9 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://www.linkedin.com/in/mohammadzeeshan"
+    - "https://github.com/zeecitizen"
+    - "https://twitter.com/zeeshanMK_"
 
 
 # Analytics
@@ -193,6 +197,7 @@ defaults:
       path: ""
       type: posts
     values:
+      sitemap: false
       layout: single
       author_profile: true
       read_time: true
@@ -211,6 +216,7 @@ defaults:
       path: ""
       type: teaching
     values:
+      sitemap: false
       layout: single
       author_profile: true
       share: true
@@ -238,9 +244,23 @@ defaults:
       path: ""
       type: talks
     values:
+      sitemap: false
       layout: talk
       author_profile: true
       share: true
+  # template leftovers: keep out of the sitemap
+  - scope:
+      path: "files/paper*.pdf"
+    values:
+      sitemap: false
+  - scope:
+      path: "talkmap"
+    values:
+      sitemap: false
+  - scope:
+      path: "markdown_generator"
+    values:
+      sitemap: false
 
 # Sass/SCSS
 sass:

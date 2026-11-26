@@ -1,6 +1,6 @@
 ---
 permalink: /
-excerpt: "Senior Software Engineer — Python & Java, cloud, data and AI."
+excerpt: "Mohammad Zeeshan, Senior Software Engineer in Munich: Python and Java, cloud, data and AI. Deloitte, Huawei, BMW, Samsung. M.Sc. Computer Science, TU Munich (TUM); visiting student at MIT."
 author_profile: true
 redirect_from:
   - /about/
